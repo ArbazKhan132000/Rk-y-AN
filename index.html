@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Radha Krishna - Pure Veg & Premium Stay</title>
+    <meta name="description" content="Experience premium stay and pure vegetarian dining at Hotel Radha Krishna, located on Asian Highway 46, Varangaon Highway.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header id="header">
+        <div class="container navbar">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Hotel Radha Krishna Logo">
+            </a>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#dining">Dining</a></li>
+                    <li><a href="#banquet">Banquet</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#booking" class="btn-primary">Book Now</a>
+                <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <img src="images/exterior.jpg" alt="Hotel Radha Krishna Exterior" class="hero-bg">
+        
+        <div class="hero-content container">
+            <h1 class="fade-in-up">Welcome to Hotel Radha Krishna</h1>
+            <p class="fade-in-up delay-1">Experience elegance, comfort, and pure vegetarian delight on the Varangaon Highway.</p>
+            <a href="#about" class="btn-outline fade-in-up delay-2">Discover More</a>
+        </div>
+
+        <!-- Booking Widget -->
+        <div class="booking-widget container fade-in-up delay-3" id="booking">
+            <form action="mailto:arazk132000@gmail.com" method="post" enctype="text/plain" class="booking-form">
+                <div class="form-group">
+                    <label for="checkin">Check-In</label>
+                    <input type="date" id="checkin" name="Check-In" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkout">Check-Out</label>
+                    <input type="date" id="checkout" name="Check-Out" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Guests</label>
+                    <select id="guests" name="Guests">
+                        <option value="1">1 Adult</option>
+                        <option value="2" selected>2 Adults</option>
+                        <option value="3">3 Adults</option>
+                        <option value="4">4 Adults</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Contact Number</label>
+                    <input type="tel" id="phone" name="Phone" placeholder="Your Phone Number" required>
+                </div>
+                <button type="submit" class="btn-primary">Check Availability</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container about-grid">
+            <div class="about-text">
+                <h2 class="section-title">A Luxurious Escape</h2>
+                <p>Located conveniently on Asian Highway 46, Hotel Radha Krishna offers a seamless blend of modern comfort and traditional hospitality. Whether you are traveling for business or leisure, our beautifully appointed rooms, expansive banquet facilities, and exceptional pure vegetarian dining ensure a memorable stay.</p>
+                <ul class="features-list">
+                    <li><span class="icon">✓</span> Premium Accommodations</li>
+                    <li><span class="icon">✓</span> 100% Pure Veg Restaurant</li>
+                    <li><span class="icon">✓</span> Spacious Banquet Hall</li>
+                    <li><span class="icon">✓</span> Prime Highway Location</li>
+                </ul>
+            </div>
+            <div class="about-image">
+                <img src="images/exterior.jpg" alt="Hotel Exterior" class="rounded-image shadow">
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="section bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Rooms & Suites</h2>
+                <p>Relax in our thoughtfully designed spaces tailored for your comfort.</p>
+            </div>
+            <div class="rooms-grid">
+                <div class="room-card">
+                    <div class="room-img-wrapper">
+                        <img src="images/room.jpg" alt="Deluxe Room">
+                    </div>
+                    <div class="room-info">
+                        <h3>Deluxe Double Room</h3>
+                        <p>Spacious room featuring comfortable twin beds, modern amenities, and a warm, inviting ambiance.</p>
+                        <div class="room-amenities">
+                            <span>Free Wi-Fi</span>
+                            <span>AC</span>
+                            <span>Room Service</span>
+                        </div>
+                        <a href="#booking" class="btn-outline-sm">Book Room</a>
+                    </div>
+                </div>
+                <!-- Additional Room Cards can be added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Dining Section -->
+    <section id="dining" class="section">
+        <div class="container dining-grid">
+            <div class="dining-image">
+                 <img src="images/restaurant.jpg" alt="Pure Veg Restaurant" class="rounded-image shadow">
+            </div>
+            <div class="dining-text">
+                <h2 class="section-title">Pure Veg Dining</h2>
+                <p>Indulge in a culinary journey at our exclusive Pure Veg Restaurant. We serve a wide variety of delectable dishes prepared with the freshest ingredients, offering an authentic taste that delights the senses.</p>
+                <a href="#contact" class="btn-primary mt-4">Reserve a Table</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banquet Section -->
+    <section id="banquet" class="section bg-light">
+        <div class="container text-center">
+            <div class="section-header">
+                <h2 class="section-title">Grand Banquet Hall</h2>
+                <p>The perfect venue for your memorable events, weddings, and corporate gatherings.</p>
+            </div>
+            <div class="banquet-image-wrapper mt-4">
+                 <img src="images/banquet.jpg" alt="Banquet Hall" class="rounded-image shadow w-100">
+            </div>
+            <p class="mt-4 max-w-700 mx-auto">Our expansive banquet hall features elegant lighting, modern facilities, and customizable seating arrangements to accommodate large gatherings with ease and sophistication.</p>
+            <a href="#contact" class="btn-primary mt-4">Enquire Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3 class="footer-logo">Hotel Radha Krishna</h3>
+                <p>Experience elegance, comfort, and pure vegetarian delight.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul class="contact-list">
+                    <li>
+                        <strong>Address:</strong><br>
+                        Asian Highway 46, Varangaon Highway
+                    </li>
+                    <li>
+                        <strong>Phone:</strong><br>
+                        <a href="tel:9100000000">9100000000</a>
+                    </li>
+                    <li>
+                        <strong>Email:</strong><br>
+                        <a href="mailto:arazk132000@gmail.com">arazk132000@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#dining">Dining</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Hotel Radha Krishna. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
